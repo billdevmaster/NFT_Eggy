@@ -1,0 +1,50 @@
+.roadmap {
+    .roadmap-item {
+        padding-bottom: 70px;
+        padding-left: 150px;
+        position: relative;
+        @media only screen and (max-width: 600px) {
+            padding-left: 100px;
+            padding-bottom: 130px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 76px;
+            height: 90px;
+            border-radius: 50%;
+            background: white;
+            left: 0;
+            top: 0;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 35px;
+            top: 70px;
+            height: 100%;
+            width: 10px;
+            background: white;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+        .roadmap-item-image {
+            position: absolute;
+            bottom: -85px;
+            right: 100px;
+            @media only screen and (max-width: 600px) {
+                right: 0px;
+                bottom: 30px;
+            }
+            img {
+                @media only screen and (max-width: 600px) {
+                    width: 200px;
+                }
+                width: 300px;
+            }
+        }
+    }
+}
