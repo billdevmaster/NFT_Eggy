@@ -1,2 +1,0 @@
-(this["webpackJsonpspace-market"]=this["webpackJsonpspace-market"]||[]).push([[0],{42:function(e,t,s){"use strict";s.r(t);s(1);var a=s(2);t.default=function(){return Object(a.jsx)(a.Fragment,{children:"ERROR"})}}}]);
-//# sourceMappingURL=error.598904b3.chunk.js.map

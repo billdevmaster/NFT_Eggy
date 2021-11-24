@@ -6,6 +6,7 @@ module.exports = {
         fontFamily: {
           'londrina-black': ['LondrinaSolid-Black', 'sans-serif'],
           'londrina-thin': ['LondrinaSolid-Thin', 'sans-serif'],
+          'robot-mono': ['Roboto Mono', 'monospace'],
         },
         extend: {
             colors: {

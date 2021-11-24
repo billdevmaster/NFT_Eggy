@@ -12,6 +12,14 @@ const HomePage = React.lazy(() =>
   import(/* webpackChunkName: "homepage" */ "./pages/home")
 );
 
+const Mint = React.lazy(() =>
+  import(/* webpackChunkName: "mint" */ "./pages/mint")
+);
+
+const Faq = React.lazy(() =>
+  import(/* webpackChunkName: "faq" */ "./pages/faq")
+);
+
 const Error = React.lazy(() =>
   import(/* webpackChunkName: "error" */ "./pages/error")
 );
@@ -28,6 +36,16 @@ class App extends React.Component {
                   path="/"
                   exact
                   render={(props) => <HomePage {...props} />}
+                />
+                <Route
+                  path="/mint"
+                  exact
+                  render={(props) => <Mint {...props} />}
+                />
+                <Route
+                  path="/faq"
+                  exact
+                  render={(props) => <Faq {...props} />}
                 />
                 <Route
                   path="/error"
