@@ -33,17 +33,17 @@
         }
         .roadmap-item-image {
             position: absolute;
-            bottom: -85px;
+            bottom: -65px;
             right: 100px;
             @media only screen and (max-width: 600px) {
                 right: 0px;
-                bottom: 30px;
+                bottom: 45px;
             }
             img {
                 @media only screen and (max-width: 600px) {
-                    width: 200px;
+                    width: 100px;
                 }
-                width: 300px;
+                width: 150px;
             }
         }
     }

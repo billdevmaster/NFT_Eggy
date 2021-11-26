@@ -1,8 +1,14 @@
 import React from 'react';
 
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+
 const Faq = () => {
     return (
         <>
+        <Header />
+        <main>
             <section className="pt-24 bg-primary pb-24 md:pb-80">
                 <div className="container mx-auto">
                     <h2 className="uppercase text-6xl font-black text-white text-center font-londrina-black">FAQ</h2>
@@ -20,6 +26,8 @@ const Faq = () => {
                     </div>
                 </div>
             </section>
+        </main>
+        <Footer />
         </>
     );
 };

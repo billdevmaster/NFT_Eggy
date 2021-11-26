@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaDiscord } from 'react-icons/fa';
 
@@ -9,10 +11,10 @@ const Footer = () => {
         <footer className="bg-secondary">
             <div className="container mx-auto">
                 <div className="flex items-center justify-center mb-20 sm:flex-nowrap flex-wrap">
-                    <button className="font-londrina-black bg-transparent rounded-full w-60 text-center p-2 border-4 border-white hover:border-opacity-70 font-bold text-white text-2xl mx-5 sm:mb-0 mb-3">
+                    <NavLink to="/faq" className="uppercasefont-londrina-black bg-transparent rounded-full w-60 text-center p-2 border-4 border-white hover:border-opacity-70 font-bold text-white text-2xl mx-5 sm:mb-0 mb-3">
                         FAQS
-                    </button>
-                    <button className="font-londrina-black bg-transparent rounded-full w-60 text-center p-2 border-4 border-white hover:border-opacity-70 font-bold text-white text-2xl mx-5">
+                    </NavLink>
+                    <button className="font-londrina-black bg-transparent rounded-full w-60 text-center p-2 border-4 border-white hover:border-opacity-70 font-bold text-white text-2xl mx-5 uppercase">
                         Join Discord
                     </button>
                 </div>

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
+
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const Homepage = () => {
+    const roadmapRef = useRef();
     return (
         <>
+        <Header roadmapRef={roadmapRef} />
+        <main>
             <section className="banner-wrapper">
                 <div className="container">
                     <div className="w-1/2 pr-10">
@@ -13,8 +19,8 @@ const Homepage = () => {
             <section className="bg-secondary py-14">
                 <div className="container mx-auto">
                     <div className="flex items-center justify-center md:justify-end flex-wrap md:flex-nowrap">
-                        <p className="text-6xl text-white font-londrina-black font-bold uppercase mb-10 md:mb-0 md:text-left text-center md:mr-10">Available to mint jan 2022</p>
-                        <button className="font-londrina-black uppercase bg-transparent rounded-full py-2 px-5 border-4 border-white hover:border-opacity-70 font-bold text-white text-4xl">
+                        <p className="text-6xl text-white font-londrina-black font-bold uppercase mb-10 md:mb-0 md:text-left text-center md:mr-32">Available to mint early 2022</p>
+                        <button className="font-londrina-black uppercase bg-transparent rounded-full py-4 px-10 border-4 border-white hover:border-opacity-70 font-bold text-white text-5xl">
                             Join Wating List
                         </button>
                     </div>
@@ -25,7 +31,7 @@ const Homepage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                         <div>
                             <h2 className="text-6xl font-black text-dark-green uppercase mb-16 font-londrina-black">What are eggys?</h2>
-                            <p className="text-xl text-dark-green font-robot-mono">Eggys are a collection of programmatically, randomly generated NFTs on the Ethereum blockchain. The 1st generation consists of 5,555 randomly assembled Eggys.</p>
+                            <p className="text-xl text-dark-green font-robot-mono leading-10">Eggys are a collection of programmatically, randomly generated NFTs on the Ethereum blockchain. The 1st generation consists of 5,555 randomly assembled Eggys.</p>
                         </div>
                         <div>
                             <img src="./assets/img/artboard_1.png" alt="Art Board" />
@@ -38,31 +44,31 @@ const Homepage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
                         <div className="text-center">
                             <img src="./assets/img/eggy_16.png" className="mx-auto mb-5" alt="Eggy 16" />
-                            <h2 className="uppercase text-3xl font-black mb-1 font-londrina-black">Common</h2>
+                            <h2 className="uppercase text-4xl font-black mb-1 font-londrina-black">Common</h2>
                             <p className="uppercase text-dark-green font-robot-mono font-bold">2 assets <br />2000 eggys</p>
                         </div>
                         
                         <div className="text-center">
                             <img src="./assets/img/eggy_08.png" className="mx-auto mb-5" alt="Eggy 8" />
-                            <h2 className="uppercase text-3xl font-black mb-1 font-londrina-black">Nifty</h2>
+                            <h2 className="uppercase text-4xl font-black mb-1 font-londrina-black">Nifty</h2>
                             <p className="uppercase text-dark-green font-robot-mono font-bold">a assets <br />1750 eggys</p>
                         </div>
                         
                         <div className="text-center">
                             <img src="./assets/img/eggy_21.png" className="mx-auto mb-5" alt="Eggy 21" />
-                            <h2 className="uppercase text-3xl font-black mb-1 font-londrina-black">Tangy</h2>
+                            <h2 className="uppercase text-4xl font-black mb-1 font-londrina-black">Tangy</h2>
                             <p className="uppercase text-dark-green font-robot-mono font-bold">4 assets <br />1250 eggys</p>
                         </div>
                         
                         <div className="text-center">
                             <img src="./assets/img/eggy_29.png" className="mx-auto mb-5" alt="Eggy 29" />
-                            <h2 className="uppercase text-3xl font-black mb-1 font-londrina-black">Elite</h2>
+                            <h2 className="uppercase text-4xl font-black mb-1 font-londrina-black">Elite</h2>
                             <p className="uppercase text-dark-green font-robot-mono font-bold">5 assets <br />540 eggys</p>
                         </div>
                         
                         <div className="text-center">
                             <img src="./assets/img/artboard_2.png" className="mx-auto mb-5" alt="Eggy 30" />
-                            <h2 className="uppercase text-3xl font-black mb-1 font-londrina-black">Ledgeneggy</h2>
+                            <h2 className="uppercase text-4xl font-black mb-1 font-londrina-black">Ledgeneggy</h2>
                             <p className="uppercase text-dark-green font-robot-mono font-bold">6 assets <br />15 eggys</p>
                         </div>
                     </div>
@@ -76,16 +82,16 @@ const Homepage = () => {
             <section className="py-20">
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-5">
-                        <div className="md:col-span-3"><img src="./assets/img/eggy_33@2x.png" className="mx-auto" alt="Eggy 1" /></div>
+                        <div className="md:col-span-3"><img src="./assets/img/new_eggy_4@2x.png" className="mx-auto" alt="Eggy 1" /></div>
                         <div className="md:col-span-2 pt-20">
-                            <h3 className="uppercase text-6xl font-londrina-black font-black text-dark-green mb-5">Buy an Eggy & Help a Hen</h3>
-                            <p className="text-dark-green text-xl font-medium font-robot-mono">By owning an Eggy you will be able to join Club Eggy, an exclusiveBy owning an Eggy you will be able to join Club Eggy, an exclusive</p>
+                            <h3 className="uppercase text-6xl font-londrina-black font-black text-dark-green mb-10">Buy an Eggy & Help a Hen</h3>
+                            <p className="text-dark-green text-xl font-medium font-robot-mono leading-10">By owning an Eggy you will be able to join Club Eggy, an exclusiveBy owning an Eggy you will be able to join Club Eggy, an exclusive</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-5">
                         <div className="md:col-span-2 pt-20">
-                            <h3 className="uppercase text-6xl font-londrina-black font-black text-dark-green mb-5">Club Eggy</h3>
-                            <p className="text-dark-green text-xl font-medium font-robot-mono">By owning an Eggy you will be able to join Club Eggy, an exclusiveBy owning an Eggy you will be able to join Club Eggy, an exclusive</p>
+                            <h3 className="uppercase text-6xl font-londrina-black font-black text-dark-green mb-10">Club Eggy</h3>
+                            <p className="text-dark-green text-xl font-medium font-robot-mono leading-10">By owning an Eggy you will be able to join Club Eggy, an exclusiveBy owning an Eggy you will be able to join Club Eggy, an exclusive</p>
                             <div className="flex items-center flex-wrap -mx-2.5 mt-5">
                                 <span className="font-robot-mono rounded-full border-4 border-dark-green text-lg font-medium p-2 my-2 mx-4 uppercase">Behind the scenes</span>
                                 <span className="font-robot-mono rounded-full border-4 border-dark-green text-lg font-medium p-2 my-2 mx-4 uppercase">Gen 2 Voting</span>
@@ -95,11 +101,11 @@ const Homepage = () => {
 
                             </div>
                         </div>
-                        <div className="md:col-span-3"><img src="./assets/img/new_eggy_4@2x.png" className="mx-auto" alt="Eggy 1" /></div>
+                        <div className="md:col-span-3"><img src="./assets/img/eggy_33@2x.png" className="mx-auto" alt="Eggy 1" /></div>
                     </div>
                 </div>
             </section>
-            <section className="py-20 bg-primary" id="roadmap">
+            <section className="py-20 bg-primary" id="roadmap" ref={roadmapRef}>
                 <div className="container">
                     <h2 className="text-6xl uppercase text-center font-black text-white mb-10 text-cente font-londrina-blackr">Roadmap</h2>
                     <div className="roadmap">
@@ -111,9 +117,6 @@ const Homepage = () => {
                                     That my friend….is the smell of ‘The Eggys’ boiling away in the pot. <br /> <br />
                                     They are not ready to come out yet, but boy oh boy are they boilin’ up real good! Don’t have egg on your face, come and join us over on Twitter and Discord to be one of the community. Participate in mini-games, community events and you might even be in with a chance of winning a prize (They may or may not have egg in them…)
                                 </p>
-                            </div>
-                            <div className="roadmap-item-image">
-                                <img src="./assets/img/eggy_19@2x.png" alt="Eggy 19" />
                             </div>
                         </div>
                         
@@ -127,7 +130,7 @@ const Homepage = () => {
                                 </p>
                             </div>
                             <div className="roadmap-item-image">
-                                <img src="./assets/img/eggy_19@2x.png" alt="Eggy 19" />
+                                <img src="./assets/img/roadmap/Artboard_17.png" width="50" alt="Eggy 19" />
                             </div>
                         </div>
                         
@@ -141,7 +144,7 @@ const Homepage = () => {
                                 </p>
                             </div>
                             <div className="roadmap-item-image">
-                                <img src="./assets/img/eggy_16@2x.png" alt="Eggy 19" />
+                                <img src="./assets/img/roadmap/Artboard_20.png" width="50" alt="Eggy 19" />
                             </div>
                         </div>
                         
@@ -155,12 +158,14 @@ const Homepage = () => {
                                 </p>
                             </div>
                             <div className="roadmap-item-image">
-                                <img src="./assets/img/eggy_19@2x.png" alt="Eggy 19" />
+                                <img src="./assets/img/roadmap/Artboard_19.png" width="50" alt="Eggy 19" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+        </main>
+        <Footer />
         </>
     );
 };
